@@ -1,2 +1,46 @@
 # ProdigyInfoTech_Task01
-Simple Test cases for a Simple Calculator Application
+
+Task 1 : Simple Test cases for a Simple Calculator Application
+Problem Sattement -Create detailed test cases in markdown format for calculator, that performs, addition, subtraction, division and multiplication. focus on valid inputs eg positive, negative, decimal, BODMAS rules and invalid inputs eg nonnumeric characters, divide by zero, etc. Each test case should include the following elements - testcase id, test description, precondition, test steps, expected result
+
+Test Website : [sCalc](https://dunizb.github.io/sCalc/)
+
+# Calculator Test Cases
+
+## Valid Input Test Cases
+
+| Test Case ID | Test Description | Preconditions | Test Steps | Expected Results |
+|-------------|-----------------|--------------|-----------|-----------------|
+| TC001 | Addition of Two Positive Integers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button   <br>2. Click on "+" button   <br>3. Click on "7" button  <br>4. Click on "=" button   | The calculator displays "12" in the result area |
+| TC002 | Addition of Positive and Negative Integers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "8" button<br>2. Click on "+" button<br>3. Click on "+/-" button<br>4. Click on "3" button<br>5. Click on "=" button | The calculator displays "5" in the result area |
+| TC003 | Addition of Decimal Numbers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "4" button<br>2. Click on "." button<br>3. Click on "5" button<br>4. Click on "+" button<br>5. Click on "2" button<br>6. Click on "." button<br>7. Click on "7" button<br>8. Click on "=" button | The calculator displays "7.2" in the result area |
+| TC004 | Subtraction of Two Positive Integers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "1" button<br>2. Click on "2" button<br>3. Click on "-" button<br>4. Click on "5" button<br>5. Click on "=" button | The calculator displays "7" in the result area |
+| TC005 | Subtraction Resulting in Negative Number | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "3" button<br>2. Click on "-" button<br>3. Click on "8" button<br>4. Click on "=" button | The calculator displays "-5" in the result area |
+| TC006 | Subtraction of Decimal Numbers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "9" button<br>2. Click on "." button<br>3. Click on "8" button<br>4. Click on "-" button<br>5. Click on "4" button<br>6. Click on "." button<br>7. Click on "3" button<br>8. Click on "=" button | The calculator displays "5.5" in the result area |
+| TC007 | Multiplication of Two Positive Integers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "6" button<br>2. Click on "×" button<br>3. Click on "7" button<br>4. Click on "=" button | The calculator displays "42" in the result area |
+| TC008 | Multiplication of Positive and Negative Numbers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "9" button<br>2. Click on "×" button<br>3. Click on "+/-" button<br>4. Click on "4" button<br>5. Click on "=" button | The calculator displays "-36" in the result area |
+| TC009 | Multiplication of Decimal Numbers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "2" button<br>2. Click on "." button<br>3. Click on "5" button<br>4. Click on "×" button<br>5. Click on "3" button<br>6. Click on "." button<br>7. Click on "2" button<br>8. Click on "=" button | The calculator displays "8" in the result area |
+| TC010 | Division of Two Positive Integers with No Remainder | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "1" button<br>2. Click on "0" button<br>3. Click on "÷" button<br>4. Click on "2" button<br>5. Click on "=" button | The calculator displays "5" in the result area |
+| TC011 | Division of Two Positive Integers with Remainder | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "1" button<br>2. Click on "0" button<br>3. Click on "÷" button<br>4. Click on "3" button<br>5. Click on "=" button | The calculator displays "3.3333333333333335" in the result area |
+| TC012 | Division of Negative Numbers | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "+/-" button<br>2. Click on "1" button<br>3. Click on "2" button<br>4. Click on "÷" button<br>5. Click on "+/-" button<br>6. Click on "4" button<br>7. Click on "=" button | The calculator displays "3" in the result area |
+| TC013 | Using Clear Entry Button | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "2" button<br>3. Click on "CE" button<br>4. Click on "3" button | The calculator displays "53" in the input area |
+| TC014 | Using All Clear Button | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "+" button<br>3. Click on "7" button<br>4. Click on "AC" button | The calculator display is cleared and shows "0" |
+| TC015 | Percentage Function | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "1" button<br>2. Click on "0" button<br>3. Click on "0" button<br>4. Click on "%" button | The calculator displays "1" in the result area (100 ÷ 100 = 1) |
+| TC016 | Sign Change Function | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "+/-" button | The calculator displays "-5" in the input area |
+| TC017 | Multiple Operations | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "2" button<br>2. Click on "+" button<br>3. Click on "3" button<br>4. Click on "×" button<br>5. Click on "4" button<br>6. Click on "=" button | The calculator displays "20" in the result area (follows immediate execution order (2+3)×4=20) |
+
+## Invalid Input Test Cases
+
+| Test Case ID | Test Description | Preconditions | Test Steps | Expected Results |
+|-------------|-----------------|--------------|-----------|-----------------|
+| TC018 | Division by Zero | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "÷" button<br>3. Click on "0" button<br>4. Click on "=" button | The calculator displays "Infinity" in the result area |
+| TC019 | Keyboard Input Test | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Try to type "123" using keyboard | The calculator does not accept keyboard input (only button clicks are supported) |
+| TC020 | Operation without Second Operand | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "7" button<br>2. Click on "+" button<br>3. Click on "=" button without entering a second number | The calculator displays "14" in the result area (adds the number to itself) |
+| TC021 | Consecutive Operation Buttons | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "+" button<br>3. Click on "×" button (without entering a second number)<br>4. Click on "3" button<br>5. Click on "=" button | The calculator displays "15" in the result area (last operation takes precedence) |
+| TC022 | Multiple Decimal Points | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "." button<br>3. Click on "2" button<br>4. Click on "." button<br>5. Click on "7" button | The calculator displays "5.27" in the input area (second decimal point is ignored) |
+| TC023 | Very Large Number Input | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "9" repeatedly 15 times<br>2. Click on "+" button<br>3. Click on "1" button<br>4. Click on "=" button | The calculator displays a result in scientific notation or handles according to JavaScript number limitations |
+| TC024 | Operation After Infinity Result | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "÷" button<br>3. Click on "0" button<br>4. Click on "=" button (displays "Infinity")<br>5. Click on "+" button<br>6. Click on "5" button<br>7. Click on "=" button | The calculator displays "Infinity" in the result area (Infinity + 5 = Infinity) |
+| TC025 | Empty Input Equals | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "=" button without entering any numbers or operations | The calculator displays "0" in the result area |
+| TC026 | Repeated Equals Button | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "+" button<br>3. Click on "3" button<br>4. Click on "=" button (displays "8")<br>5. Click on "=" button again | The calculator displays "11" in the result area (adds 3 again with each press) |
+| TC027 | Using AC After Error | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "÷" button<br>3. Click on "0" button<br>4. Click on "=" button (displays "Infinity")<br>5. Click on "AC" button | The calculator display is cleared and shows "0" |
+| TC028 | Operation After Result | Browser open to [sCalc](https://dunizb.github.io/sCalc/) | 1. Click on "5" button<br>2. Click on "+" button<br>3. Click on "3" button<br>4. Click on "=" button (displays "8")<br>5. Click on "×" button<br>6. Click on "2" button<br>7. Click on "=" button | The calculator displays "16" in the result area (uses the previous result in the new operation) |
