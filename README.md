@@ -1,6 +1,7 @@
-# ProdigyInfoTech_Task01
+# Prodigy_ST_01
 
-Task 1 : Simple Test cases for a Simple Calculator Application
+## Task 1 : Simple Test cases for a Simple Calculator Application
+
 Problem Sattement -Create detailed test cases in markdown format for calculator, that performs, addition, subtraction, division and multiplication. focus on valid inputs eg positive, negative, decimal, BODMAS rules and invalid inputs eg nonnumeric characters, divide by zero, etc. Each test case should include the following elements - testcase id, test description, precondition, test steps, expected result
 
 Test Website : [sCalc](https://dunizb.github.io/sCalc/)
